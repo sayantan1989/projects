@@ -16,12 +16,10 @@ GET : http://localhost:8080/user-service/case1
 This uses simple variables to pass session data around, works fine but can be tedious to pass session data in all the classes
 
 GET : http://localhost:8080/user-service/case2
-This uses static objects to pass session data around, this might work for a single or few calss in parallel from postman etc. However with significant number of
-parallel calls session context information will be lost. Example follow the section of bulk calls below.
+This uses static objects to pass session data around, this might work for a single or few calls in parallel from postman etc. However with significant number of parallel calls session's context information will be lost. Follow the section of bulk calls below to see.
 
 GET : http://localhost:8080/user-service/case3
-This uses thread local storage, you do not need to pass information around. You can do a get / set of context however it works only with a callback function which will have
-the access to the thread local context. Please see the implemetation in  /src/http/routes/userRoute.ts
+This uses thread local storage, you do not need to pass information around. You can do a get / set of context however it works only with a callback function which will have the access to the thread local context. Please see the implemetation in  /src/http/routes/userRoute.ts
 
 Response :
 ```
