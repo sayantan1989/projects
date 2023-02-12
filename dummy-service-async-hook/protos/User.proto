@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package com.sap.crm.userproto;
+
+service User {
+
+    rpc GetUser (GetUserRequest) returns (GetUserResponse) {
+    }
+
+}
+
+message GetUserRequest{
+    string id = 1;
+    string first_name = 2;
+    string last_name = 3;
+}
+
+
+message GetUserResponse{
+    bool success = 1;
+    string data = 2;
+}

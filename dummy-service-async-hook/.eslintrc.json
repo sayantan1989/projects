@@ -1,0 +1,50 @@
+{
+  "env": {
+    "es2017": true,
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "require-jsdoc": 0,
+    "max-len": 0,
+    "no-console": 2,
+    "new-cap": [2, {
+      "properties": false
+    }],
+    "semi": ["error", "always"],
+    "no-var": 2,
+    "prefer-const": 2,
+    "comma-dangle": ["error", {
+      "arrays": "never",
+      "objects": "never",
+      "imports": "never",
+      "exports": "never",
+      "functions": "never"
+    }],
+    "linebreak-style": 0,
+    "indent": [0, "tab"],
+    "no-tabs": 0,
+    "object-curly-spacing": 0,
+    "no-unused-vars": 1,
+    "prefer-promise-reject-errors": 0,
+    "no-undef": 0,
+    "guard-for-in": 0,
+    "sonarjs/no-duplicate-string": 1
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:sonarjs/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "sonarjs"
+  ],
+  "globals": {
+    "process": true
+  }
+}

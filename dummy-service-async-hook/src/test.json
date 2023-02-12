@@ -1,0 +1,23 @@
+[
+    {
+       "user":{
+          "id":"emp1",
+          "points":56000,
+          "married":true
+       }
+    },
+    {
+       "user":{
+          "id":"emp2",
+          "points":56000,
+          "married":true
+       }
+    },
+    {
+       "user":{
+          "id":"emp3",
+          "points":56000,
+          "married":true
+       }
+    }
+ ]
