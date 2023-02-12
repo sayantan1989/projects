@@ -6,8 +6,11 @@ Simple service to demonstrate use if thread local storage
 use node: ">=14.20.0 <15.0.0"
 
 cd projects/dummy-service-async-hook
+
 npm i
+
 npm run build
+
 npm run start
 
 # Endpoint
