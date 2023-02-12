@@ -1,6 +1,6 @@
 # Project Documentation/Wiki
 
-Simple service to demonstrate use if thread local storage
+Simple service to demonstrate use of thread local storage with node async_hooks
 
 # Set up
 use node: ">=14.20.0 <15.0.0"
