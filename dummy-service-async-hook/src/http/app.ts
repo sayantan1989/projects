@@ -105,6 +105,9 @@ export class HttpApp {
     HttpApp._express.use(`${Env.getApiUrl()}/case1`, new User().getUserRouter());
     HttpApp._express.use(`${Env.getApiUrl()}/case2`, new User().getUserRouter());
     HttpApp._express.use(`${Env.getApiUrl()}/case3`, new User().getUserRouter());
+    //test
+    HttpApp._express.use(`${Env.getApiUrl()}/case4`, new User().getUserRouter());
+    HttpApp._express.use(`${Env.getApiUrl()}/case5`, new User().getUserRouter());
   }
 
   /**

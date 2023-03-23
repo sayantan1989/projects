@@ -8,6 +8,8 @@ export class User {
 
         const UserRouter = router();
 
+
+
         UserRouter.get('/', async (req: Request, res: Response, next: NextFunction) => {
             try {
 
@@ -31,6 +33,17 @@ export class User {
                 // use async hooks
                 if ( req.baseUrl === '/user-service/case3' ){
                     const result = await userController.case3();
+                    res.status(200).json({ value : result });
+                }
+
+                if ( req.baseUrl === '/user-service/case4' ){
+                    const result =  await userController.case4(testheader);
+                    res.status(200).json({ value : result });
+                }
+
+
+                if ( req.baseUrl === '/user-service/case5' ){
+                    const result =  await userController.case5(testheader);
                     res.status(200).json({ value : result });
                 }
 
